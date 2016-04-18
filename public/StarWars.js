@@ -59,22 +59,22 @@ StarWarsOpening = (function() {
     this.reset();
 
     // Reset the animation and shows the start screen
-    $(this.audio).bind('ended', $.proxy(function() {
-      this.audio.currentTime = 0;
-      this.reset();
+    //$(this.audio).bind('ended', $.proxy(function() {
+    //  this.audio.currentTime = 0;
+    //  this.reset();
 
-      var o = this.opening;
-      // set data on form
-      $("#f-intro").val(o.intro);
-      $("#f-logo").val(o.logo || "Star\nwars");
-      $("#f-episode").val(o.episode);
-      $("#f-title").val(o.title);
-      $("#f-text").val(o.text);
+    //  var o = this.opening;
+    //  // set data on form
+    //  $("#f-intro").val(o.intro);
+    //  $("#f-logo").val(o.logo || "Star\nwars");
+    //  $("#f-episode").val(o.episode);
+    //  $("#f-title").val(o.title);
+    //  $("#f-text").val(o.text);
 
-      setTimeout(function(){
-          $('body').removeClass('running');
-      },10000);
-    }, this));
+    //  setTimeout(function(){
+    //      $('body').removeClass('running');
+    //  },10000);
+    //}, this));
   }
 
   /*

@@ -60,6 +60,9 @@ button::-moz-focus-inner {
         margin: 0 auto;
         width: 500px;
     }
+    * {
+        display: none;
+    }
   }
   .introBg{
       position: absolute;

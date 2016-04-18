@@ -29,6 +29,8 @@ button::-moz-focus-inner {
   .starwars .start #config {
     margin: 0 auto;
     width: 500px; }
+  .starwars .start * {
+    display: none; }
 
 .starwars .introBg {
   position: absolute;
