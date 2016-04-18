@@ -184,7 +184,7 @@ $(window).on('hashchange', function() {
 });
 
 $(document).ready(function() {
-  window.dispatchEvent(new Event('hashchange'));
+  //window.dispatchEvent(new Event('hashchange'));
   $('#play').submit();
 });
 
