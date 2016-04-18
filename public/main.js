@@ -186,6 +186,7 @@ $(window).on('hashchange', function() {
 $(document).ready(function() {
   //window.dispatchEvent(new Event('hashchange'));
   $('#play').submit();
+  $('#play').hide();
 });
 
 var calcTime = function(queue){
