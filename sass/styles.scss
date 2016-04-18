@@ -16,16 +16,13 @@
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-
 @font-face {
-    font-family: StarWars;
-    src: url('Starjedi.ttf');
+    font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue';
 }
 
 $timeFactor: 1;
-$introColor: rgb(75, 213, 238);
-$titlesColor: #ffd54e;
+$introColor: #ffffff;
+$titlesColor: #ff6508;
 
 html,
 body {
@@ -81,8 +78,8 @@ button::-moz-focus-inner {
     position: static;
     top: 0px;
     left: 0px;
-    font-size: 500%;
-    font-weight: 400;
+    font-size: 250%;
+    font-weight: 200;
     color: $introColor;
     opacity: 0;
     animation: intro 6s * $timeFactor ease-out 1s * $timeFactor;
@@ -92,7 +89,7 @@ button::-moz-focus-inner {
   }
 
   .logo {
-    font-family: StarWars;
+    font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue';
     text-align:center;
     position: static;
 
@@ -278,7 +275,7 @@ button::-moz-focus-inner {
           color: black;
           border: 0.0666em solid transparentize($titlesColor, 0.8);
           border-radius: 0.0533em;
-        font-family: StarWars;
+        font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue';
         font-size: 50px;
         font-weight: normal;
         height: 125px;
@@ -290,6 +287,7 @@ button::-moz-focus-inner {
 
 #f-intro{
     color: $introColor !important;
+    font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue';
 }
 #f-text{
   height: 230px;
@@ -389,12 +387,12 @@ button::-moz-focus-inner {
 }
 
 .deathstar {
-  background: black url(deathstar.png) no-repeat;
-  width: 655px;
-  height: 663px;
+  background: black url(earth.png) no-repeat;
+  width: 1360px;
+  height: 1369px;
   position: absolute;
-  bottom: 1150px;
-  right: 100px;
+  bottom: 850px;
+  left: 100px;
 }
 
 #logoimg{

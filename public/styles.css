@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @font-face {
-  font-family: StarWars;
-  src: url("Starjedi.ttf"); }
+  font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue'; }
 
 html,
 body {
@@ -9,7 +7,7 @@ body {
   height: 100%;
   font: 700 1em "News Cycle", sans-serif;
   letter-spacing: .15em;
-  color: #ffd54e;
+  color: #ff6508;
   margin: 0; }
 
 /* Remove dotted border on Firefox (http://stackoverflow.com/a/199319) */
@@ -48,9 +46,9 @@ button::-moz-focus-inner {
   position: static;
   top: 0px;
   left: 0px;
-  font-size: 500%;
-  font-weight: 400;
-  color: #4bd5ee;
+  font-size: 250%;
+  font-weight: 200;
+  color: #ffffff;
   opacity: 0;
   animation: intro 6s ease-out 1s; }
   @media (max-width: 1250px) {
@@ -58,7 +56,7 @@ button::-moz-focus-inner {
       font-size: 350%; } }
 
 .starwars .logo {
-  font-family: StarWars;
+  font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue';
   text-align: center;
   position: static;
   margin: 0 auto;
@@ -167,7 +165,7 @@ button::-moz-focus-inner {
   font-size: 50px;
   border: 0;
   background: transparent;
-  color: #ffd54e;
+  color: #ff6508;
   text-shadow: none;
   transition: text-shadow 0.5s ease-out;
   outline: none; }
@@ -181,28 +179,29 @@ button::-moz-focus-inner {
     width: 100%;
     margin-bottom: 10px;
     padding: 0.25em;
-    border: 0.25em solid rgba(255, 213, 78, 0.2);
+    border: 0.25em solid rgba(255, 101, 8, 0.2);
     border-radius: 0.2em;
     background: black;
-    color: #ffd54e;
+    color: #ff6508;
     transition: border-color 0.7s ease-out; }
     #form-starwars input:active, #form-starwars input:focus, #form-starwars textarea:active, #form-starwars textarea:focus {
-      border-color: #ffd54e; }
+      border-color: #ff6508; }
   #form-starwars textarea {
     resize: none; }
     #form-starwars textarea#f-logo {
       color: black;
-      border: 0.0666em solid rgba(255, 213, 78, 0.2);
+      border: 0.0666em solid rgba(255, 101, 8, 0.2);
       border-radius: 0.0533em;
-      font-family: StarWars;
+      font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue';
       font-size: 50px;
       font-weight: normal;
       height: 125px;
       line-height: 86%;
-      text-shadow: -2px -2px 0 #ffd54e, -2px -1px 0 #ffd54e, -2px 0px 0 #ffd54e, -2px 1px 0 #ffd54e, -2px 2px 0 #ffd54e, -1px -2px 0 #ffd54e, -1px -1px 0 #ffd54e, -1px 0px 0 #ffd54e, -1px 1px 0 #ffd54e, -1px 2px 0 #ffd54e, 0px -2px 0 #ffd54e, 0px -1px 0 #ffd54e, 0px 0px 0 #ffd54e, 0px 1px 0 #ffd54e, 0px 2px 0 #ffd54e, 1px -2px 0 #ffd54e, 1px -1px 0 #ffd54e, 1px 0px 0 #ffd54e, 1px 1px 0 #ffd54e, 1px 2px 0 #ffd54e, 2px -2px 0 #ffd54e, 2px -1px 0 #ffd54e, 2px 0px 0 #ffd54e, 2px 1px 0 #ffd54e, 2px 2px 0 #ffd54e; }
+      text-shadow: -2px -2px 0 #ff6508, -2px -1px 0 #ff6508, -2px 0px 0 #ff6508, -2px 1px 0 #ff6508, -2px 2px 0 #ff6508, -1px -2px 0 #ff6508, -1px -1px 0 #ff6508, -1px 0px 0 #ff6508, -1px 1px 0 #ff6508, -1px 2px 0 #ff6508, 0px -2px 0 #ff6508, 0px -1px 0 #ff6508, 0px 0px 0 #ff6508, 0px 1px 0 #ff6508, 0px 2px 0 #ff6508, 1px -2px 0 #ff6508, 1px -1px 0 #ff6508, 1px 0px 0 #ff6508, 1px 1px 0 #ff6508, 1px 2px 0 #ff6508, 2px -2px 0 #ff6508, 2px -1px 0 #ff6508, 2px 0px 0 #ff6508, 2px 1px 0 #ff6508, 2px 2px 0 #ff6508; }
 
 #f-intro {
-  color: #4bd5ee !important; }
+  color: #ffffff !important;
+  font-family: 'HelveticaNeue-Regular', 'Helvetica Neue Regular', 'Helvetica Neue'; }
 
 #f-text {
   height: 230px; }
@@ -220,12 +219,12 @@ button::-moz-focus-inner {
 
 .star-wars-alert {
   background-color: black !important;
-  border: 2px solid #ffd54e; }
+  border: 2px solid #ff6508; }
   .star-wars-alert h2, .star-wars-alert p {
-    color: #ffd54e !important; }
+    color: #ff6508 !important; }
   .star-wars-alert button {
-    border: 2px solid #ffd54e !important;
-    color: #ffd54e !important;
+    border: 2px solid #ff6508 !important;
+    color: #ff6508 !important;
     background-color: black !important; }
 
 #footer {
@@ -236,7 +235,7 @@ button::-moz-focus-inner {
   font-size: 0.7em;
   color: #9e9e42; }
   #footer a {
-    color: #ffd54e;
+    color: #ff6508;
     text-decoration: none; }
     #footer a:hover {
       color: #fff;
@@ -274,12 +273,12 @@ button::-moz-focus-inner {
     transform: translateY(-2200px); } }
 
 .deathstar {
-  background: black url(deathstar.png) no-repeat;
-  width: 655px;
-  height: 663px;
+  background: black url(earth.png) no-repeat;
+  width: 1360px;
+  height: 1369px;
   position: absolute;
-  bottom: 1150px;
-  right: 100px; }
+  bottom: 850px;
+  left: 100px; }
 
 #logosvg {
   width: 900px;
@@ -300,15 +299,15 @@ button::-moz-focus-inner {
   width: 100%;
   margin-bottom: 10px;
   padding: 0.25em;
-  border: 0.25em solid rgba(255, 213, 78, 0.2);
+  border: 0.25em solid rgba(255, 101, 8, 0.2);
   border-radius: 0.2em;
   background: black;
-  color: #ffd54e;
+  color: #ff6508;
   transition: border-color 0.7s ease-out; }
   .sweet-alert fieldset input:active, .sweet-alert fieldset input:focus {
     outline: none;
     box-shadow: none;
-    border: 0.25em solid #ffd54e; }
+    border: 0.25em solid #ff6508; }
 
 .sweet-alert .icon, .sweet-alert .sa-input-error::before, .sweet-alert .sa-input-error::after {
   background-color: #C31D00 !important; }

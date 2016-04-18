@@ -55,8 +55,8 @@ $('#form-starwars').submit(function(event) {
     text: $("#f-text").val(),
   };
   var aLogo = opening.logo.split('\n');
-  if(aLogo.length > 2){
-      sweetAlert("Oops...", "Logo can't have more than 2 lines.", "warning");
+  if(aLogo.length > 3){
+      sweetAlert("Oops...", "Logo can't have more than 3 lines.", "warning");
       return;
   }
   $.ajax({
@@ -111,14 +111,16 @@ $(window).on('hashchange', function() {
                 var aLogo = logoText.split('\n'); // breaks logo text in 2 lines
                 var logo1 = aLogo[0];
                 var logo2 = aLogo[1] || "";
+                var logo3 = aLogo[2] || "";
                 if(logoText.toLowerCase() != "star\nwars"){
                     var texts = $('#logosvg text',StarWars.animation);
                     texts[0].textContent = logo1;
                     texts[1].textContent = logo2;
+                    texts[2].textContent = logo3;
 
                     // calculate the svg viewBox using the number of characters of the longest world in the logo.
-                    var logosize = logo1.length > logo2.length ? logo1 : logo2;
-                    var vbox = '0 0 '+logosize.length*200+' 500';
+                    var logosize = Math.max(logo1.length, logo2.length, logo3.length);
+                    var vbox = '0 0 '+logosize*200+' 750';
                     $('#logosvg',StarWars.animation).each(function () {$(this)[0].setAttribute('viewBox', vbox) });
                     $('#logosvg',StarWars.animation).show();
                     $('#logoimg',StarWars.animation).hide();
