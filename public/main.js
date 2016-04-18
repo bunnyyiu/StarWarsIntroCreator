@@ -21,7 +21,7 @@ document.body.addEventListener('touchstart', loadData);
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
     var type = document.activeElement.type || '';
-    if(!type.startsWith('text')){
+    if(type.indexOf('text') < 0){
         if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
             e.preventDefault();
         }
